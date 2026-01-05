@@ -99,7 +99,7 @@ const ConferenceEvent = () => {
                                 <td>{item.name}</td>
                                 <td>{item.cost}</td>
                                 <td>
-                                    {item.type === "meals" || item.numberOfPeople ? ` For $${numberOfPeople} people` : item.quantity}
+                                    {item.type === "meals" || item.numberOfPeople ? ` For ${numberOfPeople} people` : item.quantity}
                                 </td>
                                 <td>{item.type === "meals" || item.numberOfPeople ? `${item.cost * numberOfPeople}` : `${item.cost * item.quantity}`}</td>
                             </tr>
